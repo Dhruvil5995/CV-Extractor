@@ -1,0 +1,16 @@
+!pip install -U pip setuptools wheel
+!pip install -U spacy
+!python -m spacy download en_core_web_lg
+!pip install -U spacy download en
+import spacy
+!pip install PyMuPDF
+import sys, fitz
+!python -m spacy download de_core_news_lg
+!pip install -U spacy download de
+
+import nltk
+import re
+nltk.download('punkt')
+import spacy
+import sys, fitz
+from spacy.matcher import Matcher
