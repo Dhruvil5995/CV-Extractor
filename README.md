@@ -1,6 +1,6 @@
 ### CV-Extractor ###
 
-> Extract useful information from CVs, resume
+> Extract random information from CVs, resume
 > HR or company receives multiple CVs in a day, it is a time-consuming and very slow process to  review each CV one by one
 > CV-extractor helps to review multiple CVs at one time.
 > it is a time-saving and very fast process.
