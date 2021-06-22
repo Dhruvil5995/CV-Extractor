@@ -1,14 +1,14 @@
-### CV-Extractor ###
+# CV-Extractor 
 
-> Extract random information from CVs, resume
-> HR or company receives multiple CVs in a day, it is a time-consuming and very slow process to  review each CV one by one
-> CV-extractor helps to review multiple CVs at one time.
-> it is a time-saving and very fast process.
+* Extract random information from CVs, resume
+* HR or company receives multiple CVs in a day, it is a time-consuming and very slow process to  review each CV one by one
+* CV-extractor helps to review multiple CVs at one time.
+* it is a time-saving and very fast process.
 
-**Extract information from CVs according to company requirements.**
+##Extract information from CVs according to company requirements.
 e.g.* Name, Address, Education, experience, etc.
 
-1)extract Name:
+###1)extract Name:
 > use Spacy library
 > load ('en_core_web_lg') model -- large model for English.
 > convert CV(PDF) into a text string.
