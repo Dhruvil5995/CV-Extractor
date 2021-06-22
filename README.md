@@ -28,17 +28,17 @@ e.g.* Name, Address, Education, experience, etc.
 
 * use nltk                        
 * create a list and write education and similar words of education.
-e.g.-    edu=['Bildung','Ausbildung','AUSBILDUNG','BILDUNG','EDUCATION','Education','Hochschul','HOCHSCHUL','Studium','STUDIUM',qualification]
+            e.g.-    edu=['Bildung','Ausbildung','AUSBILDUNG','BILDUNG','EDUCATION','Education','Hochschul','HOCHSCHUL','Studium','STUDIUM',qualification]
             ## for English and German language ## 
 
-> convert CV text into words(tokenization)
+* convert CV text into words(tokenization)
   words= nltk.word_tokenize(CV_text)
-> find Education or similar word from CV words and take starting index of that word.
+* find Education or similar word from CV words and take starting index of that word.
 `   for variable in words:
        if variable in edu:
          start=words.index(variable)
          st=start+1`
-> take randomly 30 to 25 words from start index. 
+* take randomly 30 to 25 words from start index. 
 `   end= st+25
     for item in words[st:end]:
        education_list.append(item)`
@@ -52,7 +52,7 @@ e.g.-    edu=['Bildung','Ausbildung','AUSBILDUNG','BILDUNG','EDUCATION','Educati
 
 
 
-## 3)extract Skills, Hobbie, language:
+### 3)extract Skills, Hobbie, language:
 * convert CV text into words(tokenization)
 * create a list for Computer or other skills(manually)
 ###       computer_skills =
@@ -80,7 +80,7 @@ e.g.-    edu=['Bildung','Ausbildung','AUSBILDUNG','BILDUNG','EDUCATION','Educati
                            'FreshBooks','Xero','Tableau','Tello','Matlab','Julia','OpenOffice']:
 * if any skill present in CV and it matches with CV text then it extracts that skill.
 
-## 4)extract email and phone number:
+### 4)extract email and phone number:
 * use regex library
 * (r'[\w\.-]+@[\w\.-]+') - for find email address from CVs
  > Where, [\w\.-]- find all character from  A to Z and all digits 0 to 9
@@ -89,7 +89,7 @@ e.g.-    edu=['Bildung','Ausbildung','AUSBILDUNG','BILDUNG','EDUCATION','Educati
 * (r'[\+\(]?[1-9][0-9 .\-\(\)]{8,}[0-9]')
  > use to find + and two digits for country code
 
-## 5) create functions:
+### 5) create functions:
 * create Functions for each information and put all functions in one main function for better view.
 
 ## 
@@ -105,12 +105,12 @@ e.g.-    edu=['Bildung','Ausbildung','AUSBILDUNG','BILDUNG','EDUCATION','Educati
        cell=extract_phone_numbers(cv)
        ad=extract_Address(cv)
     
-    return  name,Dob,language, skill, hobbie, educ, exp, mail, cell,ad**
+    return  name,Dob,language, skill, hobbie, educ, exp, mail, cell,ad
 
-## main function
+### main function
             final_list= all_CV_information('020.pdf') # Pdf file (CV)# input
 
-##  create latex file
+###  create latex file
 * write and save result into latex file 
 ## 
 
