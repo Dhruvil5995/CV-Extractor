@@ -5,25 +5,26 @@
 * CV-extractor helps to review multiple CVs at one time.
 * it is a time-saving and very fast process.
 
-##Extract information from CVs according to company requirements.
+## Extract information from CVs according to company requirements.
 e.g.* Name, Address, Education, experience, etc.
 
-###1)extract Name:
-> use Spacy library
-> load ('en_core_web_lg') model -- large model for English.
-> convert CV(PDF) into a text string.
-> Apply English model on CV(PDF) text.
-> create a custom rule to extract the name
-> First name and Last name are always Proper Nouns
-> create a pattern for PROPN in POS
-> add pattern which searches PROPN in POS
-> put all PROPN words in the list and take the first PROPN, Name of person in CV always written at starting 
+### 1)extract Name:
+* use Spacy library
+* load ('en_core_web_lg') model -- large model for English.
+* convert CV(PDF) into a text string.
+* Apply English model on CV(PDF) text.
+* create a custom rule to extract the name
+* First name and Last name are always Proper Nouns
+* create a pattern for PROPN in POS
+* add pattern which searches PROPN in POS
+* put all PROPN words in the list and take the first PROPN, Name of person in CV always written at starting 
 
-2)extract education, experience, addresses:
+### 2)extract education, experience, addresses:
  ** Extract the Whole section of education, experience, addresses from CV**
-# by doing extract whole section you get:  1) university name (So no need to extract separately )
-                                           2) Field of Study
-                                           3)  
+### by doing extract whole section you get:  
+                                           1) university name (So no need to extract separately 
+                                           2) Field of Study  
+                                             
 
 > use nltk                        
 > create a list and write education and similar words of education.
