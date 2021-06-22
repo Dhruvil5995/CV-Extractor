@@ -21,27 +21,29 @@ e.g.* Name, Address, Education, experience, etc.
 
 ### 2)extract education, experience, addresses:
  ** Extract the Whole section of education, experience, addresses from CV
-### by doing extract whole section you get:  
+### By doing extract whole section you get:  
                                            1) university name (So no need to extract separately 
                                            2) Field of Study  
                                              
 
 * use nltk                        
 * create a list and write education and similar words of education.
-            e.g.-    edu=['Bildung','Ausbildung','AUSBILDUNG','BILDUNG','EDUCATION','Education','Hochschul','HOCHSCHUL','Studium','STUDIUM',qualification]
+*  e.g.-    edu=['Bildung','Ausbildung','AUSBILDUNG','BILDUNG','EDUCATION','Education','Hochschul','HOCHSCHUL','Studium','STUDIUM',qualification]
             ## for English and German language ## 
 
 * convert CV text into words(tokenization)
   words= nltk.word_tokenize(CV_text)
 * find Education or similar word from CV words and take starting index of that word.
-`   for variable in words:
+##   
+      for variable in words:
        if variable in edu:
          start=words.index(variable)
-         st=start+1`
+         st=start+1
 * take randomly 30 to 25 words from start index. 
-`   end= st+25
+##
+    end= st+25
     for item in words[st:end]:
-       education_list.append(item)`
+       education_list.append(item)
 
 
 
@@ -83,11 +85,11 @@ e.g.* Name, Address, Education, experience, etc.
 ### 4)extract email and phone number:
 * use regex library
 * (r'[\w\.-]+@[\w\.-]+') - for find email address from CVs
- > Where, [\w\.-]- find all character from  A to Z and all digits 0 to 9
+ * Where, [\w\.-]- find all character from  A to Z and all digits 0 to 9
           @-  search @
           [\w\.-]+  - search (.) 
 * (r'[\+\(]?[1-9][0-9 .\-\(\)]{8,}[0-9]')
- > use to find + and two digits for country code
+ * use to find + and two digits for country code
 
 ### 5) create functions:
 * create Functions for each information and put all functions in one main function for better view.
