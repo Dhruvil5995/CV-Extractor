@@ -54,7 +54,7 @@ e.g.-    edu=['Bildung','Ausbildung','AUSBILDUNG','BILDUNG','EDUCATION','Educati
 ## 3)extract Skills, Hobbie, language:
 * convert CV text into words(tokenization)
 * create a list for Computer or other skills(manually)
-###       computer_s## kills =
+###       computer_skills =
                           ['ABAP','ActionScript','Ada','ALGOL','Alice','APL','ASP','ASP.NET','Assembly Language',
                           'Awk','BBC Basic','C','C++','C','C#','COBOL','Cascading Style Sheets','D','Delphi',
                           'Dreamweaver','Erlang and Elixir','F#','FORTH','FORTRAN','Functional Programming',
