@@ -20,14 +20,14 @@ e.g.* Name, Address, Education, experience, etc.
 * put all PROPN words in the list and take the first PROPN, Name of person in CV always written at starting 
 
 ### 2)extract education, experience, addresses:
- ** Extract the Whole section of education, experience, addresses from CV**
+ ** Extract the Whole section of education, experience, addresses from CV
 ### by doing extract whole section you get:  
                                            1) university name (So no need to extract separately 
                                            2) Field of Study  
                                              
 
-> use nltk                        
-> create a list and write education and similar words of education.
+* use nltk                        
+* create a list and write education and similar words of education.
 e.g.-    edu=['Bildung','Ausbildung','AUSBILDUNG','BILDUNG','EDUCATION','Education','Hochschul','HOCHSCHUL','Studium','STUDIUM',qualification]
             ## for English and German language ## 
 
